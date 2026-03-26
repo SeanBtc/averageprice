@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_transaction"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <View
+        android:id="@+id/viewAccent"
+        android:layout_width="4dp"
+        android:layout_height="24dp"
+        android:background="#2E7D32" />
+
+    <Space
+        android:layout_width="12dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买入加仓"
+            android:textColor="#2E7D32"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTxDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="单价: 0.0 | 数量: 0.0"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnDeleteTx"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:contentDescription="删除交易"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="#7A7F85" />
+</LinearLayout>
